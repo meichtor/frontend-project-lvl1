@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "hexlet project brain games",
   "homepage": "https://github.com/meichtor/frontend-project-lvl1#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "bugs": {
     "url": "https://github.com/meichtor/frontend-project-lvl1/issues"
   },
