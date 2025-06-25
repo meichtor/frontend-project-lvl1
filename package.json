@@ -1,0 +1,20 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "hexlet project brain games",
+  "homepage": "https://github.com/meichtor/frontend-project-lvl1#readme",
+  "bugs": {
+    "url": "https://github.com/meichtor/frontend-project-lvl1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meichtor/frontend-project-lvl1.git"
+  },
+  "license": "ISC",
+  "author": "meichtor",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
