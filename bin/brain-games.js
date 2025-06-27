@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { greetingWithName } from '../src/cli.js'
+import { greetingWithName, showWelcomeMessage } from '../src/cli.js'
 
-console.log('Welcome to the Brain Games!')
+showWelcomeMessage()
 greetingWithName()
