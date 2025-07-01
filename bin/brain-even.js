@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import { showWelcomeMessage, greetingWithName } from '../src/cli.js'
-import { evenGame } from '../src/even-game.js'
+import { evenInfo, evenGame } from '../src/games/even-game.js'
+import { gameHandler } from '../src/index.js'
 
-showWelcomeMessage()
-greetingWithName()
-evenGame()
+gameHandler(evenInfo, evenGame)
