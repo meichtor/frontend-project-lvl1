@@ -12,8 +12,7 @@ export const gameHandler = (gameInfo, getGameData) => {
 
   for (let i = 0; i < gameStepsCount; i += 1) {
     const gameData = getGameData()
-    const question = gameData[0]
-    const correctAnswer = gameData[1]
+    const [question, correctAnswer] = gameData
 
     console.log('Question: ' + question)
 

@@ -1,10 +1,10 @@
 import { getRandomInt } from '../math.js'
-import { maxRandomNumber } from '../index.js'
+import { gameHandler, maxRandomNumber } from '../index.js'
 
-export const calcInfo = 'What is the result of the expression?'
+const calcInfo = 'What is the result of the expression?'
 const expressions = ['+', '-', '*']
 
-export const calcGame = () => {
+const calcGameData = () => {
   const randomExp = expressions[getRandomInt(expressions.length)]
   const randomLeftOperand = getRandomInt(maxRandomNumber)
   const randomRightOperand = getRandomInt(maxRandomNumber)
@@ -29,3 +29,5 @@ export const calcGame = () => {
 
   return [question, correctAnswer.toString()]
 }
+
+export default () => gameHandler(calcInfo, calcGameData)
