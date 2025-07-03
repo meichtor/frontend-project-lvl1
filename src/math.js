@@ -12,3 +12,15 @@ export const getGcd = (a, b) => {
 
   return a
 }
+
+export const getProgression = (start, step, length) => {
+  const progression = []
+
+  for (let i = 0; i < length; i += 1) {
+    const currentElement = start + i * step
+
+    progression.push(currentElement)
+  }
+
+  return progression
+}
