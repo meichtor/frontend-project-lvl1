@@ -1,5 +1,5 @@
 export const isEven = number => number % 2 === 0
-export const getRandomInt = max => Math.floor(Math.random() * max)
+export const getRandomInt = (min, max) => min + Math.floor(Math.random() * (max - min + 1))
 export const getGcd = (a, b) => {
   if (b === 0) {
     return a

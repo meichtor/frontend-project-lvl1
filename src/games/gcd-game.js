@@ -4,8 +4,8 @@ import { gameHandler, maxRandomNumber } from '../index.js'
 export const gcdInfo = 'Find the greatest common divisor of given numbers.'
 
 export const gcdGameData = () => {
-  const firstNumber = getRandomInt(maxRandomNumber)
-  const secondNumber = getRandomInt(maxRandomNumber)
+  const firstNumber = getRandomInt(0, maxRandomNumber)
+  const secondNumber = getRandomInt(0, maxRandomNumber)
   const question = `${firstNumber} ${secondNumber}`
   const correctAnswer = getGcd(firstNumber, secondNumber)
 

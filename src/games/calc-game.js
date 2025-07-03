@@ -5,9 +5,9 @@ const calcInfo = 'What is the result of the expression?'
 const expressions = ['+', '-', '*']
 
 const calcGameData = () => {
-  const randomExp = expressions[getRandomInt(expressions.length)]
-  const randomLeftOperand = getRandomInt(maxRandomNumber)
-  const randomRightOperand = getRandomInt(maxRandomNumber)
+  const randomExp = expressions[getRandomInt(0, expressions.length - 1)]
+  const randomLeftOperand = getRandomInt(1, maxRandomNumber)
+  const randomRightOperand = getRandomInt(1, maxRandomNumber)
   const question = `${randomLeftOperand} ${randomExp} ${randomRightOperand}`
 
   let correctAnswer
