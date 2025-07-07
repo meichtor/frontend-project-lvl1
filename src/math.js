@@ -25,4 +25,16 @@ export const getProgression = (start, step, length) => {
   return progression
 }
 
-export const isPrime = number => number >= 2 && !isEven(number) && number % 3 !== 0
+export const isPrime = (number) => {
+  if (number < 2) {
+    return false
+  }
+
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+    if (number % i === 0) {
+      return false
+    }
+  }
+
+  return true
+}
