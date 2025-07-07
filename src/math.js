@@ -24,3 +24,5 @@ export const getProgression = (start, step, length) => {
 
   return progression
 }
+
+export const isPrime = number => number >= 2 && !isEven(number) && number % 3 !== 0
